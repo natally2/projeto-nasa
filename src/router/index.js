@@ -19,6 +19,21 @@ Vue.use(VueRouter)
     component: function () {
       return import(/* webpackChunkName: "about" */ '../views/About.vue')
     }
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: function () {
+      return import(/* webpackChunkName: "about" */ '../views/Login.vue')
+    }
+  }
+  ,
+  {
+    path: '/cadastro',
+    name: 'Cadastro',
+    component: function () {
+      return import(/* webpackChunkName: "about" */ '../views/Cadastro.vue')
+    }
   }
 ]
 

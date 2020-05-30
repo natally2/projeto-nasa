@@ -1,9 +1,11 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
+      <router-link to="/login">Login</router-link> |
+      <router-link to="/cadastro">Cadastro</router-link> |
       <router-link to="/about">About</router-link>
-    </div>
+    </div> -->
     <router-view/>
   </div>
 </template>
@@ -28,5 +30,19 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+@font-face {
+  font-family: 'Advent Pro';
+  src: url('~@/assets/fonts/AdventPro-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('~@/assets/fonts/Montserrat-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
 }
 </style>
