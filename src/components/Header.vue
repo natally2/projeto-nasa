@@ -19,7 +19,8 @@ h1,h5{
 .menu{
   background: linear-gradient(180deg, #7873F5 0%, #FF6EC4 99.98%, #D96FD2 99.99%);
   width: 18%;
-  height: 100%;
+  height: 650px;
+  /* height: 100%; */
   /* position: fixed; */
   border-top-right-radius: 65px;
   border-bottom-right-radius: 65px;
