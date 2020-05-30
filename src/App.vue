@@ -1,30 +1,22 @@
 <template>
   <div id="app">
     <router-view/>
-
   </div>
 
 </template>
 
 <style>
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
+@font-face {
+  font-family: 'Advent Pro';
+  src: url('~@/assets/fonts/AdventPro-Bold.ttf');
   font-weight: bold;
-  color: #2c3e50;
+  font-style: normal;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-} */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('~@/assets/fonts/Montserrat-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
 </style>
