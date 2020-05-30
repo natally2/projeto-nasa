@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 // import Home from '../views/Home.vue'
 import Perfil from '../views/Perfil.vue'
 import Resultado from '../views/Resultado-Busca.vue'
+import Login from '../views/Login.vue'
+import Cadastro from '../views/Cadastro.vue'
 
 Vue.use(VueRouter)
 
@@ -24,7 +26,16 @@ const router = new VueRouter({
       name: 'resultado-busca',
       component: Resultado
     },
-
+    {
+      path: '/login',
+      name: 'login',
+      component: Login
+    },
+    {
+      path: '/cadastro',
+      name: 'cadastro',
+      component: Cadastro
+    },
   ]
 })
 
