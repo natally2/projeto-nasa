@@ -2,28 +2,29 @@
     <div id="cadastro">
         <header id="header">
             <div id="header-begin">
-                <img src="../assets/images/logo-login.svg" id="logo-title" alt="Home">
-                <span id="title">LEARNING COMMUNITY</span>
+                <img src="../assets/images/logo-login.svg" id="logo-title">
+                <span id="title">LEARNING<br>COMMUNITY</span>
             </div>
             <div id="header-end">
-                <div id="header-item"><p>Home</p></div>
+                <div id="header-item">Home</div>
                 <div id="header-item">About</div>
                 <div id="header-item">Contact</div>
-                <div id="signup-btn"><span id="signup-txt">Sign Up</span></div>
+                <button id="signup-btn">Sign Up</button>
             </div>
         </header>
         <body id="body">
-            <div id="content">
-                <span id="title-body">Welcome</span>
-                <span id="label">Email</span>
-                <input type="text">
-                <span id="label">Password</span>
-                <input type="text">
-                <span id="label">Confirm Password</span>
-                <input type="text">
-                <button id="submit">Sign Up</button>
+            <div id="center">
+                <div id="content">
+                    <span id="title-body">Welcome</span>
+                    <span id="label">Email</span>
+                    <input type="text">
+                    <span id="label">Password</span>
+                    <input type="password">
+                    <span id="label">Confirm Password</span>
+                    <input type="password">
+                    <button id="submit">Sign Up</button>
+                </div>
             </div>
-            <div ></div>
         </body>
         <footer id="footer">join the community!</footer>
     </div>
@@ -35,21 +36,25 @@
 #header {
     display: flex;
     justify-content: space-between;
+    margin: 2em;
 }
 
 #header-begin {
-    width: 50%;
+    width: 20%;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #header-end {
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 #logo-title {
-    width: 10%;
+    width: 5em;
     height: auto;
 }
 
@@ -72,29 +77,28 @@
 }
 
 #signup-btn {
-    width: 150px;
-    height: 50px;
     background: rgba(87, 79, 221, 0.8);
     border-radius: 25px;
-}
-
-#signup-txt {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
     line-height: 32px;
     color: #F2F2F2;
+    padding: 0.3em;
 }
 
-#footer {
-    content: "";
-    display: block;
-    position: absolute;
-    background: url(../assets/images/bg-login.svg) no-repeat;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+#body {
+    background: url(../assets/images/bg-login.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+#center {
+    display: flex;
+    justify-content: center;
 }
 
 #content {
@@ -107,10 +111,6 @@
     box-sizing: border-box;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 #title-body {
@@ -120,6 +120,7 @@
     font-size: 60px;
     line-height: 73px;
     color: #4F4F4F;
+    text-align: center;
 }
 
 #label {
@@ -137,6 +138,7 @@ input {
     box-sizing: border-box;
     border-radius: 10px;
     margin-bottom: 1rem !important;
+    padding: 0.3em;
 }
 
 #submit {
@@ -151,10 +153,10 @@ input {
     line-height: 22px;
     letter-spacing: 0.1em;
     color: #FFFFFF;
+    padding: 0.3em;
 }
 
 #footer {
-
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -163,18 +165,13 @@ input {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
-    /* Gray 6 */
-
     color: #F2F2F2;
+    margin-top: 2em;
 }
 
-#img-bg {
-    width: 100%;
-    height: auto;
+bg {
     position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
+    height: 100%;
+    z-index: -99999;
 }
 </style>
