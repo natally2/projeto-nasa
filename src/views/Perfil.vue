@@ -6,22 +6,34 @@
       <div class="teste">
         <div id="nome_perfil">
           <img src="../assets/pp.jpg" id="pic_profile" alt="perfil_pic" width="130px" height="130px">
-          <h1>Natally Riqueto</h1>
+          <h3 class="name">Natally Riqueto</h3>
         </div>
         <div id="btn_all">
-          <button class="btn_perfil">Learn</button>
-          <button class="btn_perfil">Teach</button>
-          <button class="btn_perfil">About</button>
+          <button class="btn_perfil">LEARN</button>
+          <button class="btn_perfil">TEACH</button>
+          <button class="btn_perfil">ABOUT</button>
         </div>
         <div id="video">
           asdsa
         </div>
         <div id="comentarios">
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud laboris.</p>
+          <div class="estrelas">
+            <font-awesome-icon size="1x" icon="star" class="icon_star"/>
+            <font-awesome-icon size="1x" icon="star" class="icon_star"/>
+            <font-awesome-icon size="1x" icon="star" class="icon_star"/>
+            <font-awesome-icon size="1x" icon="star" class="icon_star"/>
+            <font-awesome-icon size="1x" icon="star" class="icon_star"/>
+          </div>
+          <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud laboris."</p>
+          <div class="estrelas">
+            <img src="../assets/pp.jpg" id="pic_profile" alt="perfil_pic" width="40px" height="40px">
+            <p>Natally Riqueoto</p>
+          </div>
         </div>
       </div>
 
       <div id="detalhes">
+        <font-awesome-icon size="1x" icon="search"/>
         <input type="text" id="pesquisar">
         <div class="detalhes_">
         </div>
@@ -42,6 +54,14 @@
 </script>
 
 <style>
+  .name::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100px;
+    margin: 10px auto 0;
+    background: black;
+  }
   .teste{
     width: 50%;
   }
@@ -87,22 +107,14 @@
     border: none;
     border-radius: 5px;
     color: white;
-    width: 15%;
+    width: 20%;
   }
   #nome_perfil{
     margin-top: 10%;
     display: flex;
     align-items: center;
-    justify-content: space-;
-  }
-  h4{
-    color: white;
-  }
-  #title_menu{
-    color: white;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
+    width: 65%;
+    justify-content: space-between;
   }
   body{
     margin: 0 auto;
@@ -112,5 +124,15 @@
   }
   #pic_profile{
     border-radius: 50%;
+    border: solid 3px black;
+  }
+  .icon_star{
+    color: #DAA520;
+  }
+  .estrelas{
+    margin-top: 2%;
+    justify-content: flex-end;
+    display: flex;
+    margin-bottom: 2%;
   }
 </style>

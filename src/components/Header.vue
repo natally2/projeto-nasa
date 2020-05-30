@@ -1,18 +1,26 @@
 <template>
     <div class="menu">
-      <h1 id="title_menu"> Bem vindo (a), </h1>
-      <h4> Natally Riqueto</h4>
+      <h1 id="title_menu"> Welcome, </h1>
+      <h5> Natally Riqueto</h5>
     </div>
 </template>
 
 <script>
 </script>
 
-<style>
+<style scopped="">
+h1,h5{
+  color: white;
+  text-align: center;
+}
+#title_menu{
+  margin-top: 25%;
+}
 .menu{
   background: linear-gradient(180deg, #7873F5 0%, #FF6EC4 99.98%, #D96FD2 99.99%);
-  width: 20%;
-  height: 655px;
+  width: 18%;
+  height: 100%;
+  /* position: fixed; */
   border-top-right-radius: 65px;
   border-bottom-right-radius: 65px;
 }

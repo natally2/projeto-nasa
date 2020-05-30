@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 // import Home from '../views/Home.vue'
 import Perfil from '../views/Perfil.vue'
+import Resultado from '../views/Resultado-Busca.vue'
 
 Vue.use(VueRouter)
 
@@ -17,6 +18,11 @@ const router = new VueRouter({
       path: '/perfil',
       name: 'perfil',
       component: Perfil
+    },
+    {
+      path: '/resultado-busca',
+      name: 'resultado-busca',
+      component: Resultado
     },
 
   ]
