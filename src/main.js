@@ -7,11 +7,11 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faStar,faSearch} from '@fortawesome/free-solid-svg-icons'
+import { faStar, faSearch, faPaperPlane} from '@fortawesome/free-solid-svg-icons'
 
 Vue.use(BootstrapVue)
 Vue.config.productionTip = false
-library.add(faStar,faSearch)
+library.add(faStar,faSearch, faPaperPlane)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 new Vue({

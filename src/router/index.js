@@ -5,6 +5,7 @@ import Perfil from '../views/Perfil.vue'
 import Resultado from '../views/Resultado-Busca.vue'
 import Login from '../views/Login.vue'
 import Cadastro from '../views/Cadastro.vue'
+import Video from '../views/Video.vue'
 
 Vue.use(VueRouter)
 
@@ -35,6 +36,11 @@ const router = new VueRouter({
       path: '/cadastro',
       name: 'cadastro',
       component: Cadastro
+    },
+    {
+      path: '/video',
+      name: 'video',
+      component: Video
     },
   ]
 })

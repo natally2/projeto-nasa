@@ -1,5 +1,5 @@
 <template>
-    <div id="cadastro">
+    <div>
         <header id="header">
             <div id="header-begin">
                 <img src="../assets/images/logo-login.svg" id="logo-title">
@@ -13,8 +13,8 @@
             </div>
         </header>
         <body id="body">
-            <div id="center">
-                <div id="content">
+            <div id="center-form">
+                <div id="flex-form">
                     <span id="title-body">Welcome</span>
                     <span id="label">Email</span>
                     <input type="text">
@@ -36,7 +36,7 @@
 #header {
     display: flex;
     justify-content: space-between;
-    margin: 2em;
+    margin: 2rem;
 }
 
 #header-begin {
@@ -54,7 +54,7 @@
 }
 
 #logo-title {
-    width: 5em;
+    width: 5rem;
     height: auto;
 }
 
@@ -85,7 +85,7 @@
     font-size: 26px;
     line-height: 32px;
     color: #F2F2F2;
-    padding: 0.3em;
+    padding: 0.3rem;
 }
 
 #body {
@@ -96,12 +96,12 @@
     background-attachment: fixed;
 }
 
-#center {
+#center-form {
     display: flex;
     justify-content: center;
 }
 
-#content {
+#flex-form {
     display: flex;
     flex-direction: column;
     width: 25rem;
@@ -138,7 +138,7 @@ input {
     box-sizing: border-box;
     border-radius: 10px;
     margin-bottom: 1rem !important;
-    padding: 0.3em;
+    padding: 0.3rem;
 }
 
 #submit {
@@ -151,9 +151,9 @@ input {
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1rem;
     color: #FFFFFF;
-    padding: 0.3em;
+    padding: 0.3rem;
 }
 
 #footer {
@@ -163,15 +163,9 @@ input {
     font-size: 28px;
     line-height: 34px;
     text-align: center;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.06rem;
     text-transform: uppercase;
     color: #F2F2F2;
-    margin-top: 2em;
-}
-
-bg {
-    position: absolute;
-    height: 100%;
-    z-index: -99999;
+    margin-top: 2rem;
 }
 </style>
