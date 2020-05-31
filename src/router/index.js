@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// import Home from '../views/Home.vue'
+import Browse from '../views/Browse.vue'
 import Perfil from '../views/Perfil.vue'
 import Resultado from '../views/Resultado-Busca.vue'
 import Chat from '../views/Chat.vue'
@@ -19,6 +19,11 @@ const router = new VueRouter({
       path: '/perfil',
       name: 'perfil',
       component: Perfil
+    },
+    {
+      path: '/browse',
+      name: 'browse',
+      component: Browse
     },
     {
       path: '/chat',

@@ -1,8 +1,7 @@
 <template>
-  <div id="perfil">
+  <div class="content">
     <Header/>
     <div class="conteudo">
-
       <div class="teste">
         <div id="nome_perfil">
           <img src="../assets/pp.jpg" id="pic_profile" alt="perfil_pic" width="130px" height="130px">
@@ -14,7 +13,9 @@
           <button class="btn_perfil">ABOUT</button>
         </div>
         <div id="video">
-          asdsa
+          <svg width="146" height="146" viewBox="0 0 146 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M106.896 67.7266L55.334 36.3789C50.7051 33.8008 44.875 37.1113 44.875 42.5312V103.469C44.875 108.859 50.6758 112.199 55.334 109.621L106.896 80.0312C111.701 77.3652 111.701 70.4219 106.896 67.7266ZM145.656 73C145.656 32.8633 113.137 0.34375 73 0.34375C32.8633 0.34375 0.34375 32.8633 0.34375 73C0.34375 113.137 32.8633 145.656 73 145.656C113.137 145.656 145.656 113.137 145.656 73ZM14.4062 73C14.4062 40.627 40.627 14.4062 73 14.4062C105.373 14.4062 131.594 40.627 131.594 73C131.594 105.373 105.373 131.594 73 131.594C40.627 131.594 14.4062 105.373 14.4062 73Z" fill="#4F4F4F"/>
+        </svg>
         </div>
         <div id="comentarios">
           <div class="estrelas">
@@ -85,8 +86,12 @@
     border: solid 2px black;
   }
   #pesquisar{
-    border-radius: 10px;
+    border-radius: 25px;
     margin-top: 10%;
+    width:100%;
+  }
+  input{
+    outline: none;
   }
   #comentarios{
     width: 100%;
@@ -95,6 +100,9 @@
     border: solid 2px black;
   }
   #video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 334px;
     margin-bottom: 5%;
@@ -103,7 +111,7 @@
     border: solid 2px black;
   }
   .btn_perfil{
-    background-color: #9B51E0;
+    background-color: #2F80ED;
     border: none;
     border-radius: 5px;
     color: white;
@@ -119,7 +127,7 @@
   body{
     margin: 0 auto;
   }
-  #perfil{
+  .content{
     display: flex;
   }
   #pic_profile{
@@ -130,9 +138,8 @@
     color: #DAA520;
   }
   .estrelas{
-    margin-top: 2%;
+    margin: 2% 2% 2% 2%;
     justify-content: flex-end;
     display: flex;
-    margin-bottom: 2%;
   }
 </style>

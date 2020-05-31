@@ -1,16 +1,16 @@
 <template>
-  <div id="perfil">
+  <div class="content">
     <Header/>
-    <div id="chat">
+    <div class="conteudo">
       <div id="left">
         <div class="available">
           <div>
-            <img src="../assets/pp.jpg" id="pic_profile" alt="perfil_pic" width="50px" height="50px">
+            <img src="../assets/pp.jpg" id="pic_profile" alt="perfil_pic" width="55px" height="55px">
           </div>
-          <div>
-            <h6>Natally Riqueto</h6>
+          <div style="line-height: 0.1;">
+            <h6 id="">Natally Riqueto</h6>
             <font-awesome-icon size="1x" icon="circle" id="icon_circle"/>
-            <span> Available </span>
+            <span style="font-size:12px;"> Available </span>
           </div>
         </div>
         <div class="contatos">
@@ -45,16 +45,18 @@
 
 </script>
 
-<style scopped="">
+<style scoped>
   .contatos{
     display: flex;
+    justify-content: space-evenly;
     margin-top: 30%;
     margin-left: 10%;
     background: linear-gradient(90deg, #DDDBDB 99.99%, #C4C4C4 100%);
   }
   .available{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     margin-top: 6%;
   }
   #input_chat{
@@ -65,7 +67,7 @@
     background-color: #E0E0E0;
   }
   #conversa{
-    height: 80%;
+    height: 70%;
     width: 100%;
   }
   .retangulo{
@@ -75,7 +77,8 @@
     align-items: center;
     background-color: #C4C4C4;
     width: 100%;
-    height: 10%;
+    height: 15%;
+    padding-right: 2%;
   }
   .retangulo.baixo{
     border-radius: 0 0 20px 0;
@@ -108,9 +111,7 @@
   h2{
     color: black;
   }
-  #chat{
-    width: 100%;
-    display: flex;
+  .conteudo{
     justify-content: center;
     align-items: center;
   }
