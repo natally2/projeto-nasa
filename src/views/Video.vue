@@ -1,7 +1,21 @@
 <template>
     <div>
         <div id="flex-menu">
-            <div id="menu"></div>
+            <div id="menu">
+                <img src="../assets/images/menu-logo.svg" id="logo-menu">
+                <div id="item-menu">
+                    <img src="../assets/images/menu-item1.svg" id="icon-menu">
+                </div>
+                <div id="item-menu">
+                    <img src="../assets/images/menu-item2.svg" id="icon-menu">
+                </div>
+                <div id="item-menu">
+                    <img src="../assets/images/menu-item3.svg" id="icon-menu">
+                </div>
+                <div id="item-menu">
+                    <img src="../assets/images/menu-item4.svg" id="icon-menu">
+                </div>
+            </div>
             <div id="flex-title">
                 <span id="title">VIDEO</span>
                 <div id="box">
@@ -27,12 +41,27 @@
     display: flex;
 }
 
-#menu{
-  background: linear-gradient(180deg, #7873F5 0%, #FF6EC4 99.98%, #D96FD2 99.99%);
-  width: 6rem;
-  height: 100vh;
-  border-top-right-radius: 65px;
-  border-bottom-right-radius: 65px;
+#logo-menu {
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    width: 3rem;
+    height: auto;
+}
+
+#menu {
+    background: linear-gradient(180deg, #2A2A72 0%, #009FFD 100%), #022B3A;
+    width: 6rem;
+    height: 100vh;
+    border-top-right-radius: 65px;
+    border-bottom-right-radius: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#item-menu {
+    background: linear-gradient(90deg, rgba(242, 242, 242, 0.3) 0%, rgba(224, 224, 224, 0.3) 98%);
+    width: 100%;
 }
 
 #flex-title {

@@ -1,38 +1,54 @@
 <template>
     <div>
-        <header id="header">
-            <div id="header-begin">
-                <img src="../assets/images/logo-login.svg" id="logo-title">
-                <span id="title">LEARNING<br>COMMUNITY</span>
-            </div>
-            <div id="header-end">
-                <div id="header-item">Home</div>
-                <div id="header-item">About</div>
-                <div id="header-item">Contact</div>
-                <button id="signup-btn">Sign Up</button>
-            </div>
-        </header>
-        <body id="body">
-            <div id="center-form">
-                <div id="flex-form">
-                    <span id="title-body">Welcome</span>
-                    <span id="label">Email</span>
-                    <input type="text">
-                    <span id="label">Password</span>
-                    <input type="password">
-                    <span id="label">Confirm Password</span>
-                    <input type="password">
-                    <button id="submit">Sign Up</button>
+        <div id="pagina">
+            <div id="header">
+                <div id="header-begin">
+                    <img src="../assets/images/logo-login.svg" id="logo-title">
+                    <span id="header-title">LEARNING<br>COMMUNITY</span>
+                </div>
+                <div id="header-end">
+                    <div id="header-item">Home</div>
+                    <div id="header-item">About</div>
+                    <div id="header-item">Contact</div>
+                    <div id="header-item">Login</div>
+                    <button id="signup-btn">Sign Up</button>
                 </div>
             </div>
-        </body>
-        <footer id="footer">join the community!</footer>
+            <div>
+                <div id="center-form">
+                    <div id="flex-form">
+                        <span id="title-body">Welcome</span>
+                        <span id="label">Email</span>
+                        <input type="text">
+                        <span id="label">Password</span>
+                        <input type="password">
+                        <span id="label">Confirm Password</span>
+                        <input type="password">
+                        <button id="submit">Sign Up</button>
+                    </div>
+                </div>
+                <div id="footer">join the community!</div>
+            </div>
+        </div>
     </div>
 </template>
 
 <script></script>
 
 <style>
+#pagina {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height:100vh;
+    background-image: url(../assets/images/bg-login.svg);
+    background-repeat: no-repeat;
+    background-position: 0 20vh;
+    background-size: 100% auto;
+}
+
 #header {
     display: flex;
     justify-content: space-between;
@@ -58,42 +74,36 @@
     height: auto;
 }
 
-#title {
+#header-title {
     font-family: Advent Pro;
     font-style: normal;
     font-weight: bold;
-    font-size: 27.2883px;
+    font-size: 24px;
     line-height: 33px;
-    color: #9B51E0;
+    color: #2D9CDB;
 }
 
 #header-item {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 20px;
     line-height: 32px;
     color: #828282;
 }
 
 #signup-btn {
-    background: rgba(87, 79, 221, 0.8);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: #2D9CDB;
     border-radius: 25px;
+    border: 0;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 20px;
     line-height: 32px;
     color: #F2F2F2;
-    padding: 0.3rem;
-}
-
-#body {
-    background: url(../assets/images/bg-login.svg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center top;
-    background-attachment: fixed;
 }
 
 #center-form {
@@ -142,8 +152,8 @@ input {
 }
 
 #submit {
-    background: #9B51E0;
-    border: 2px solid #5B2B87;
+    background: #2F80ED;
+    border: 2px solid #4F4F4F;
     box-sizing: border-box;
     border-radius: 10px;
     font-family: Montserrat;
