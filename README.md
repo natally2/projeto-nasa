@@ -1,8 +1,8 @@
-# Learning Community
+## Learning Community
 
 **Project developed in 31/05/2020 during the Nasa Space Appps Challenge!**
 
-POGv2 Members:
+### POGv2 Members:
 
 - Eduardo Lima - https://www.linkedin.com/in/eduardo-lima-74b51b123/
 - Cesar Ando - https://www.linkedin.com/in/cesarkazu/
